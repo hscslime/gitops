@@ -56,8 +56,8 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
-          username: $
-          password: $
+          username: scdv
+          password: znmh1233!
       - name: Docker run
         run: |
           docker ps -q --filter "name=example_be" | grep -q . && docker stop example_be && docker rm -fv example_be
